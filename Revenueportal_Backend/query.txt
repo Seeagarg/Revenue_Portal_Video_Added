@@ -1,0 +1,22 @@
+
+publisher----------subscription ---------------------query----------------
+
+SELECT 
+    partner,
+    servicename,
+    COUNT(1) AS total,
+    SUM(ispending = 1) AS queue,
+    SUM(ispending = 2) AS send,
+    SUM(ispending = 3) AS SKIP,
+    SUM(ispending = 5) AS DUPLICATE
+FROM 
+    tbl_partner_callback
+WHERE 
+    DATE(DATE) BETWEEN '2024-05-14' AND '2024-05-21' 
+    AND clientName IN ('panz', 'visiontrek')
+GROUP BY 
+    partner, 
+    servicename;
+
+
+publisher------

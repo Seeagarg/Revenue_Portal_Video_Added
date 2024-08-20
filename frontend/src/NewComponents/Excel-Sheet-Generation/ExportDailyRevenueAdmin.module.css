@@ -1,0 +1,17 @@
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    /* gap: 2rem; */
+    background-color: #FFF !important;
+    overflow-x: auto;
+}
+
+.filter_button_container{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

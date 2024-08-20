@@ -1,0 +1,20 @@
+.graph_container{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 10px 0 0 0;
+}
+
+.info_container{
+    position: absolute;
+    top: -20px;
+    right: 0;
+    padding: 6px 10px 6px 10px;
+    background: #E7E7E7;
+}
+
+.info_container p{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 12px;
+    color: #333;
+}

@@ -1,0 +1,41 @@
+.sidebar_container{
+    width: 100%;
+    /* margin-top: 4rem; */
+    position: absolute;
+    top: 8rem;
+    padding-left: 0.5rem;
+}
+.tab{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #6B7281;
+    background-color: #fff;
+    cursor: pointer;
+}
+.sidebar_sub_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    gap: 0.8rem;
+}
+.tab span{
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden;    /* Hide the overflowed text */
+    text-overflow: ellipsis; /* Display an ellipsis (...) for overflowed text */
+    display: inline-block; /* Ensure that the span is treated as a block-level element */
+    max-width: 80%; /* Restrict the maximum width to the container width */
+}
+
+.short{
+    display: none;
+    visibility: hidden;
+}

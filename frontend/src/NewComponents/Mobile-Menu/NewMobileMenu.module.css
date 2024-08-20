@@ -1,0 +1,95 @@
+.mobile_menu_container{
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+    .mobile_menu_overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        min-height: 100dvh;
+        z-index: 99;
+        background-color: #000000d8;
+        transform: translateX(-2000px);
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+    .mobile_menu_overlay.show{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        min-height: 100dvh;
+        z-index: 99;
+        background-color: #000000d8;
+        transform: translateX(0);
+        cursor: pointer;
+    }
+    .mobile_menu_container{
+        display: block;
+        width: 100%;
+        max-width: 15rem !important;
+        min-height: 100dvh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        /* background-color: #212135; */
+        background-color: #fff;
+        z-index: 200;
+        transform: translateX(-2000px);
+        transition: all 0.3s;
+    }
+    .mobile_menu_container.show{
+        transform: translateX(0);
+        width: 100%;
+        max-width: 15rem !important;
+        box-shadow: 0 1.5rem 1.5rem rgba(0,0,0,0.7);
+        transition: all 0.3s;
+    }
+
+    .mobile_menu_sub_container{
+        position: absolute;
+        top: 15%;
+        transform: translateY(-15%);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 15rem;
+        padding: 0rem 1.5rem 0 1.5rem;
+    }
+    .logo_center{
+        width: 100%;
+        display: grid;
+        place-content: center;
+    }
+    .logo{
+        width: 60px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .tab{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.5rem;
+        border: none;
+        outline: none;
+        padding: 0.5rem;
+        font-size: 1rem;
+        color: #6B7281;
+        cursor: pointer;
+    }
+    
+    .tab span{
+        white-space: nowrap; /* Prevent text wrapping */
+        overflow: hidden;    /* Hide the overflowed text */
+        text-overflow: ellipsis; /* Display an ellipsis (...) for overflowed text */
+        display: inline-block; /* Ensure that the span is treated as a block-level element */
+        max-width: 95%; /* Restrict the maximum width to the container width */
+    }
+}

@@ -1,0 +1,25 @@
+.modalStyle{
+    position: absolute;
+  overflow-y: scroll;
+  height: 90vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+  background-color: #f0f0f0; /* Replace with your desired background color */
+  border: 0 solid #000;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.1); /* Replace with your desired box shadow */
+  padding: 16px; /* Adjust the padding as needed */
+}
+
+@media screen and (max-width:650px){
+    .modalStyle{
+        width:27rem;
+    }
+}
+
+@media screen and (max-width:480px){
+    .modalStyle{
+        width:20rem;
+    }
+}

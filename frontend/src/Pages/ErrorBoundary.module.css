@@ -1,0 +1,36 @@
+.message_container{
+    padding: 20px 10px 20px 10px;
+    width: 300px;
+    min-height: 50px;
+    background-color: #FFF6F8;
+    border: 1px solid #FFA7A0;
+    border-left: 3px solid #F44336;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.text {
+    font-size: 20px;
+    color: #343A40;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+
+.info{
+    padding: 10px;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 20px;
+    background-color:#ffa6a0cc;
+    color: #d01508;
+    text-align: left;
+    border-radius: 2px;
+}
